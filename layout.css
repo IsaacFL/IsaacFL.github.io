@@ -24,6 +24,8 @@ body {
 
 .item > img {
   margin-bottom: .75rem;
+  width="128";
+  height="128";
 }
 
 .item-text {
