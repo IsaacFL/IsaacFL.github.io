@@ -13,12 +13,10 @@ body {
   min-height: 50rem; 
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
 }
 
 .item {
-  float: left;
-  width: 33.333%;
+  float: center;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
