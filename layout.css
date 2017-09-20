@@ -16,7 +16,6 @@ body {
 }
 
 .item {
-  float: center;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -27,7 +26,6 @@ body {
 }
 
 .item-text {
-  float: center;
 }
 
 footer {
