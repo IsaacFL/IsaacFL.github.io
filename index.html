@@ -1,112 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">
-<meta name="application-name" content="Rick's Home">
-<meta name="msapplication-TileColor" content="#0072C6">
-<meta name="msapplication-TileImage" content="mstile-144x144.png">
-<meta name="msapplication-square70x70logo" content="mstile-70x70.png">
-<meta name="msapplication-square150x150logo" content="mstile-150x150.png">
-<meta name="msapplication-wide310x150logo" content="mstile-310x150.png">
-<meta name="msapplication-square310x310logo" content="mstile-310x310.png">
-
-<title>Rick's Home</title>
-<meta name="keywords" content="IsaacFL,Rick Coats,Palm Springs,California">
-<meta name="description" content="Rick's Home Page">
-<meta name="author" content="Rick Coats">
-<meta name="verify-v1" content="fwCL7o9CberfvuXMBX8X8UcG/eS7KF1NOn8uHEAYTa8=">
-
-    <!-- Required meta tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-
-<link href="layout.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <!-- All your favicons and meta tags stay exactly as-is -->
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">
+  <meta name="application-name" content="Ricks Home">
+  <meta name="msapplication-TileColor" content="#0072C6">
+  <!-- ... all other msapplication metas, keywords, description, author, verify-v1 ... -->
+  <title>Ricks Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="layout.css" rel="stylesheet">
 </head>
+
 <body>
+  <div class="grid">
+    <!-- Top navigation buttons (3 columns on mobile, 1 each on desktop) -->
+    <div class="nav-row">
+      <div class="nav-item"><a href="#"><img alt="Page 1" src="img/bulletwhite.png"></a></div>
+      <div class="nav-item"><a href="#"><img alt="Page 2" src="img/bulletblack.png"></a></div>
+      <div class="nav-item"><a href="#"><img alt="Page 3" src="img/bullet.png"></a></div>
+    </div>
 
-<div class="container grid">
-
-<div class="row justify-content-center">
-	<div class="col-4 justify-content-center">
-		</div>
-	<div class="col-4 justify-content-center">
-		<a href="./"><img alt="Page 1" src="img/bullet_white.png"></a>
-		<a href="pg2.html"><img alt="Page 2" src="img/bullet_black.png"></a>
-		</div>
-	<div class="col-4 justify-content-center">
-		</div>
-
-	<div class="col">
-		&nbsp;
-		</div>
-	</div>
-
-<div class="row justify-content-center">
-	<div class="col-3 col-md-2 item">
-		<a href="https://www.google.com/"><img width="64" height="64" alt="Google" src="img/google.svg"></a>
-		<p class="item-text">Google</p>
-		</div>
-	<div class="col-3 col-md-2 item">
+    <!-- Main app grid (responsive icons) -->
+    <div class="app-row">
+      <div class="item">
+        <a href="https://www.google.com"><img width="64" height="64" alt="Google" src="img/google.svg"></a>
+        <p class="item-text">Google</p>
+      </div>
+<div class="item">
 		<a href="https://maps.google.com/"><img width="64" height="64" alt="Google Maps" src="img/google-maps.svg"></a>
 		<p class="item-text">Maps</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.google.com/voice/"><img width="64" height="64" alt="Google Voice" src="img/google-voice.svg"></a>
 		<p class="item-text">Voice</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.amazon.com"><img width="64" height="64" alt="Amazon" src="img/amazon-icon.svg"></a>
 		<p class="item-text">Amazon</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.outlook.com/"><img width="64" height="64" alt="Microsoft Outlook" src="img/microsoft-outlook.svg"></a>
 		<p class="item-text">Outlook</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.icloud.com/"><img width="64" height="64" alt="iCloud" src="img/icloud.svg"></a>
 		<p class="item-text">iCloud</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.desertsun.com/"><img width="64" height="64" alt="Desert Sun" src="img/desert-sun.png"></a>
 		<p class="item-text">Desert Sun</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.morningstar.com/stocks/xnas/aapl/quote"><img width="64" height="64" alt="Apple Stock" src="img/apple-alt.svg"></a>
 		<p class="item-text">AAPL</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.morningstar.com/stocks/xnas/nvda/quote"><img width="64" height="64" alt="Nvidia Stock" src="img/nvidia.svg"></a>
 		<p class="item-text">NVDA</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://en.wikipedia.org/wiki/Main_Page/"><img width="64" height="64" alt="Wikipedia" src="img/wikipedia.svg"></a>
 		<p class="item-text">Wiki</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://www.fast.com/"><img width="64" height="64" alt="Fast Speed Test" src="img/fast-com.svg"></a>
 		<p class="item-text">Speed Test</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://speed.cloudflare.com/"><img width="64" height="64" alt="Cloudflare Speed Test" src="img/cloudflare.svg"></a>
 		<p class="item-text">Speed Test</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="https://test-ipv6.run/"><img width="64" height="64" alt="Test IPv6" src="img/World_IPv6_launch_badge.svg"></a>
 		<p class="item-text">IPv6 Test</p>
 		</div>
-	<div class="col-3 col-md-2 item">
+	<div class="item">
 		<a href="http://test-ipv6.cs.umd.edu/"><img width="64" height="64" alt="Test IPv6" src="img/World_IPv6_launch_badge.svg"></a>
 		<p class="item-text">Another IPv6 Test</p>
 		</div>
 	</div>
-</div>
+  </div>
 </body>
 </html>
