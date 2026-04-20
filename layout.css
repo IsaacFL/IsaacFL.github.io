@@ -1,38 +1,86 @@
-body {
-  min-height: 75rem;
-  background-color: lightblue;
-  color: black;
+* {
+  box-sizing: border-box;
 }
 
-.navbar {
-  margin-bottom: 0;
+body {
+  min-height: 75vh;
+  margin: 0;
+  padding: 1rem;
+  background-color: lightblue;
+  color: black;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .grid {
-  min-height: 50rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.nav-row, .app-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-item {
+  flex: 1 1 100px; /* Flexible, min 100px */
+  max-width: 150px;
 }
 
 .item {
-  padding: .75rem;
-  margin-bottom: 2rem;
-  border: 0;
+  padding: 0.75rem;
+  text-align: center;
+  flex: 1 1 150px; /* 3-col on wide screens */
+  max-width: 200px;
 }
 
-.item > img {
-  margin-bottom: .75rem;
+.item img {
+  display: block;
+  margin: 0 auto 0.5rem;
+  width: 64px;
+  height: 64px;
 }
 
 .item-text {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+/* Tablet (iPad portrait ~768px+) */
+@media (min-width: 768px) {
+  .nav-item {
+    flex: 1 1 120px;
+  }
+  .item {
+    flex: 1 1 180px;
+  }
 }
 
-footer p {
-  margin-bottom: .25rem;
+/* Desktop (1024px+) - full spread */
+@media (min-width: 1024px) {
+  body {
+    padding: 2rem;
+  }
+  .nav-row {
+    gap: 2rem;
+  }
+  .item {
+    flex: 1 1 160px;
+  }
+}
+
+/* iPhone landscape tweak */
+@media (max-width: 480px) {
+  .item {
+    flex: 1 1 120px; /* 2-col on small phones */
+  }
 }
