@@ -23,16 +23,36 @@ body {
   padding: 1rem 0;
 }
 
-.nav-row, .app-row {
+/* Navigation - exact col-4 replica */
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-spacer {
+  flex: 1 1 33%;  /* Left/Right col-4 */
+  min-width: 100px;
+}
+
+.nav-center {
+  flex: 1 1 33%;  /* Middle col-4 */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.nav-center img {
+  width: auto;  /* Original PNG size - no scaling */
+  height: auto;
+}
+
+/* App icons grid */
+.app-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-}
-
-.nav-item {
-  flex: 1 1 100px; /* Flexible, min 100px */
-  max-width: 150px;
 }
 
 .item {
@@ -57,21 +77,21 @@ body {
 
 /* Tablet (iPad portrait ~768px+) */
 @media (min-width: 768px) {
-  .nav-item {
-    flex: 1 1 120px;
-  }
   .item {
     flex: 1 1 180px;
   }
+  .nav-center {
+    gap: 1.5rem;
+  }
 }
 
-/* Desktop (1024px+) - full spread */
+/* Desktop (1024px+) */
 @media (min-width: 1024px) {
   body {
     padding: 2rem;
   }
   .nav-row {
-    gap: 2rem;
+    gap: 0;
   }
   .item {
     flex: 1 1 160px;
@@ -81,6 +101,10 @@ body {
 /* iPhone landscape tweak */
 @media (max-width: 480px) {
   .item {
-    flex: 1 1 120px; /* 2-col on small phones */
+    flex: 1 1 120px; /* 2-col on phones */
+  }
+  .nav-center {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
