@@ -101,10 +101,16 @@ body {
 /* iPhone landscape tweak */
 @media (max-width: 480px) {
   .item {
-    flex: 1 1 120px; /* 2-col on phones */
+    flex: 1 1 100px;  /* 3-col on iPhone - tighter fit */
+    max-width: 130px;
+    padding: 0.5rem;  /* Less padding */
   }
   .nav-center {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
+  }
+  .nav-center img {
+    width: 48px;
+    height: auto;
   }
 }
